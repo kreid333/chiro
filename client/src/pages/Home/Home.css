@@ -1,6 +1,6 @@
 .hero {
   width: 100%;
-  height: 30rem;
+  height: 35rem;
   background-image: url("../../images/pexels-ryutaro-tsukata-5473215.jpg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -21,8 +21,8 @@
 }
 
 .main-image {
-  width: 90%;
-  height: 90%;
+  width: 95%;
+  height: 95%;
 }
 
 .logo h5 a {
@@ -31,4 +31,45 @@
 
 .image {
   width: 50%;
+}
+
+.service-img {
+  color: white;
+  width: 20rem;
+  height: 20rem;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.chiro {
+  background-image: url("../../images/pexels-karolina-grabowska-4506109.jpg");
+}
+
+.lifestyle {
+  background-image: url("../../images/pexels-pixabay-235922.jpg");
+}
+
+.corrective {
+  background-image: url("../../images/pexels-karolina-grabowska-4506166.jpg");
+}
+
+.spinal {
+  background-image: url("../../images/pexels-karolina-grabowska-4506107.jpg");
+}
+
+.bio {
+  margin: 0;
+}
+
+.office-hours {
+  display: flex;
+  flex-direction: column;
+}
+
+.office-hours div {
+  margin: auto 0;
 }
