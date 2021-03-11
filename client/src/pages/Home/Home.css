@@ -7,22 +7,27 @@
   background-position: center;
 }
 
+.logo {
+  width: 100%;
+}
+
 .logo-bg {
   text-align: center;
-  background-image: linear-gradient(
+  /* background-image: linear-gradient(
     to right,
     rgba(255, 255, 255, 0.65) 55%,
     rgba(255, 255, 255, 0)
-  );
+  ); */
+  background-color: rgba(255, 255, 255, 0.55);
   height: 100%;
-  width: 40rem;
+  width: 100%;
   display: flex;
   align-items: center;
 }
 
 .main-image {
-  width: 95%;
-  height: 95%;
+  width: 55%;
+  height: 55%;
 }
 
 .logo h5 a {

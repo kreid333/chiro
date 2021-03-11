@@ -48,12 +48,11 @@ const Home = () => {
             ></iframe>
           </div>
         </div>
-        <br />
 
         {/* SERVICES */}
         <div className="row">
           <div className="col-sm-12 text-center">
-            <h1 className="mb-3">Services</h1>
+            <h1 className="m-3">Services</h1>
             <div className="services">
               <div className="row">
                 <div className="col-sm-6 service-img chiro">
@@ -74,17 +73,16 @@ const Home = () => {
             </div>
           </div>
         </div>
-        <br />
 
         {/* MEET THE DOCTOR */}
         <div className="row">
           <div className="col-sm-12 text-center">
-            <h1 className="">Meet the Doctor</h1>
+            <h1 className="m-3">Meet the Doctor</h1>
           </div>
         </div>
         <div className="row justify-content-center">
           <div className="col-lg-4 my-auto text-center">
-            <p className="bio m-3">
+            <p className="bio p-3">
               Dr. David L Peer, D.C., received his Doctor of Chiropractic degree
               from Life University and was recognized for his clinical
               excellence. He is certified by the National Board of Chiropractic
@@ -94,15 +92,14 @@ const Home = () => {
             </p>
           </div>
           <div className="my-auto">
-            <img className="m-3" src={drpeer} alt="Dr. David L Peer, D.C." />
+            <img className="p-3" src={drpeer} alt="Dr. David L Peer, D.C." />
           </div>
         </div>
-        <br />
 
         <div className="row">
           {/* OUR LOCATION */}
           <div className="col-sm-6 text-center mb-3">
-            <h2 className="mb-3">Our Location</h2>
+            <h2 className="m-3">Our Location</h2>
             <iframe
               width="100%"
               height="450"
@@ -115,7 +112,7 @@ const Home = () => {
 
           {/* OFFICE HOURS */}
           <div className="col-sm-6 office-hours text-center mb-3">
-            <h2 className="mb-3">Office Hours</h2>
+            <h2 className="m-3">Office Hours</h2>
             <div>
               <h5>Monday - Wednesday - Thursday</h5>
               <p>
