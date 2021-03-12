@@ -42,14 +42,16 @@ const Navbar = () => {
             </a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
               <a class="dropdown-item" href="#">
-                Action
+                Chiropractic Care
               </a>
               <a class="dropdown-item" href="#">
-                Another action
+                Corrective Exercises
               </a>
-              <div class="dropdown-divider"></div>
               <a class="dropdown-item" href="#">
-                Something else here
+                Lifestyle Advice
+              </a>
+              <a class="dropdown-item" href="#">
+                Spinal and Posture Screenings
               </a>
             </div>
           </li>
