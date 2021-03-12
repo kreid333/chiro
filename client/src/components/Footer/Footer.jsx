@@ -5,11 +5,11 @@ const Footer = () => {
   return (
     <footer class="footer">
       <div class="container text-center">
-        <ul>
-          <li>Privacy Policy</li>
-          <li>Terms of Service</li>
-          <li>Healthcare Disclaimer</li>
-          <li>HIPPA Privacy Policy</li>
+        <ul className="footer-links">
+          <li className="foot-link">Privacy Policy</li>
+          <li className="foot-link">Terms of Service</li>
+          <li className="foot-link">Healthcare Disclaimer</li>
+          <li className="foot-link">HIPPA Privacy Policy</li>
         </ul>
         <h5 className="light-text">Liberty County Clinic of Chiropractic</h5>
         <div className="contact light-text mb-2 mt-2">

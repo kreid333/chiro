@@ -2,16 +2,6 @@ body {
   padding-top: 70px;
 }
 
-ul {
-  display: flex;
-  justify-content: space-evenly;
-  padding: 0;
-}
-
-li {
-  list-style: none;
-}
-
 .hero {
   width: 100%;
   height: 35rem;
@@ -98,4 +88,13 @@ li {
 
 .bio {
   margin: 0;
+}
+
+.bio span {
+  color: black;
+  font-size: 14px;
+}
+
+.about-link {
+  color: black !important;
 }

@@ -1,3 +1,13 @@
+.navbar-nav {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 0;
+}
+
+.nav-link {
+  list-style: none;
+}
+
 nav {
   background-color: white;
   padding: 15px !important;

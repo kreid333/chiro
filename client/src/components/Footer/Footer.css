@@ -1,3 +1,13 @@
+.footer-links {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 0;
+}
+
+.foot-link {
+  list-style: none;
+}
+
 .footer {
     background-color: #002659;
     color: white;

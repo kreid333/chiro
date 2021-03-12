@@ -7,6 +7,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChevronCircleRight } from "@fortawesome/free-solid-svg-icons";
 import Footer from "../../components/Footer/Footer";
 import Operating from "../../components/Operating/Operating";
+import { Link } from "react-router-dom";
 
 const Home = () => {
   return (
@@ -99,18 +100,23 @@ const Home = () => {
         {/* MEET THE DOCTOR */}
         <div className="row">
           <div className="col-sm-12 text-center">
-            <h1 className="m-3">Meet the Doctor</h1>
+            <h1 className="ml-3 mr-3 mt-3">Meet the Doctor</h1>
           </div>
         </div>
         <div className="row justify-content-center">
           <div className="col-lg-4 my-auto text-center">
-            <p className="bio pl-3 pr-3 pb-3">
+            <p className="bio p-3">
               Dr. David L Peer, D.C., received his Doctor of Chiropractic degree
               from Life University and was recognized for his clinical
               excellence. He is certified by the National Board of Chiropractic
               Examiners and is adequately trained in a variety of techniques
               that allow our office to treat patients of all ages. We are injury
               specialists, whether due to an accident or sports related.
+              <Link className="about-link d-block pt-1" to="/about">
+                <span>
+                  Learn More <FontAwesomeIcon icon={faChevronCircleRight} />
+                </span>
+              </Link>
             </p>
           </div>
           <div className="my-auto">
