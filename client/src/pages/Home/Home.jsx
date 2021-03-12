@@ -43,7 +43,7 @@ const Home = () => {
               class="wistia_embed"
               name="wistia_embed"
               src="https://fast.wistia.net/embed/iframe/yhlgpwxnhd"
-              width="600"
+              width="100%"
               height="337.5"
             ></iframe>
           </div>
