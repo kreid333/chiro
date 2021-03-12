@@ -10,8 +10,6 @@ import Footer from "../../components/Footer/Footer";
 const Home = () => {
   return (
     <div>
-      <Navbar />
-
       {/* HERO */}
       <div className="hero">
         <div className="logo-bg">
@@ -155,7 +153,6 @@ const Home = () => {
           </div>
         </div>
       </div>
-      <Footer />
     </div>
   );
 };
