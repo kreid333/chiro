@@ -99,12 +99,3 @@ li {
 .bio {
   margin: 0;
 }
-
-.office-hours {
-  display: flex;
-  flex-direction: column;
-}
-
-.office-hours div {
-  margin: auto 0;
-}
