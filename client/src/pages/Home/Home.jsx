@@ -105,7 +105,7 @@ const Home = () => {
         </div>
         <div className="row justify-content-center">
           <div className="col-lg-4 my-auto text-center">
-            <p className="bio p-3">
+            <p className="bio pl-3 pr-3 pb-3">
               Dr. David L Peer, D.C., received his Doctor of Chiropractic degree
               from Life University and was recognized for his clinical
               excellence. He is certified by the National Board of Chiropractic
