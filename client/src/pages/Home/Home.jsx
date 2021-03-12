@@ -3,6 +3,8 @@ import Navbar from "../../components/Navbar/Navbar";
 import logo from "../../images/LCCC.png";
 import drpeer from "../../images/drpeer.jpg";
 import "./Home.css";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faChevronCircleRight } from "@fortawesome/free-solid-svg-icons";
 
 const Home = () => {
   return (
@@ -56,18 +58,38 @@ const Home = () => {
             <div className="services">
               <div className="row">
                 <div className="col-sm-6 service-img chiro">
-                  <h2>Chiropractic Care</h2>
+                  <a href="#">
+                    <h2>Chiropractic Care</h2>
+                    <span>
+                      Learn More <FontAwesomeIcon icon={faChevronCircleRight} />
+                    </span>
+                  </a>
                 </div>
                 <div className="col-sm-6 service-img corrective">
-                  <h2>Corrective Exercises</h2>
+                  <a href="#">
+                    <h2>Corrective Exercises</h2>
+                    <span>
+                      Learn More <FontAwesomeIcon icon={faChevronCircleRight} />
+                    </span>
+                  </a>
                 </div>
               </div>
               <div className="row">
                 <div className="col-sm-6 service-img lifestyle">
-                  <h2>Lifestyle Advice</h2>
+                  <a href="#">
+                    <h2>Lifestyle Advice</h2>
+                    <span>
+                      Learn More <FontAwesomeIcon icon={faChevronCircleRight} />
+                    </span>
+                  </a>
                 </div>
                 <div className="col-sm-6 service-img spinal">
-                  <h2>Spinal and Posture Screenings</h2>
+                  <a href="#">
+                    <h2>Spinal and Posture Screenings</h2>
+                    <span>
+                      Learn More <FontAwesomeIcon icon={faChevronCircleRight} />
+                    </span>
+                  </a>
                 </div>
               </div>
             </div>
