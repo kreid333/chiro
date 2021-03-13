@@ -32,7 +32,7 @@ const Navbar = () => {
           <li class="nav-item mr-5 dropdown">
             <Link
               class="nav-link dropdown-toggle"
-              to="/about"
+              to="/services"
               id="navbarDropdown"
               role="button"
               // data-toggle="dropdown"
