@@ -1,13 +1,11 @@
 import React from "react";
-import Navbar from "../../components/Navbar/Navbar";
+import "./Home.css";
 import logo from "../../images/LCCC.png";
 import drpeer from "../../images/drpeer.jpg";
-import "./Home.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChevronCircleRight } from "@fortawesome/free-solid-svg-icons";
-import Footer from "../../components/Footer/Footer";
-import Operating from "../../components/Operating/Operating";
 import { Link } from "react-router-dom";
+import Operating from "../../components/Operating/Operating";
 
 const Home = () => {
   return (

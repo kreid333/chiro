@@ -30,17 +30,17 @@ const Navbar = () => {
             </Link>
           </li>
           <li class="nav-item mr-5 dropdown">
-            <a
+            <Link
               class="nav-link dropdown-toggle"
-              href="#"
+              to="/about"
               id="navbarDropdown"
               role="button"
-              data-toggle="dropdown"
+              // data-toggle="dropdown"
               aria-haspopup="true"
               aria-expanded="false"
             >
               Services
-            </a>
+            </Link>
             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
               <a class="dropdown-item" href="#">
                 Chiropractic Care
