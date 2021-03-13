@@ -31,30 +31,30 @@ const Navbar = () => {
           </li>
           <li class="nav-item mr-5 dropdown">
             <Link
-              class="nav-link dropdown-toggle"
+              class="nav-link"
               to="/services"
-              id="navbarDropdown"
-              role="button"
+              // id="navbarDropdown"
+              // role="button"
               // data-toggle="dropdown"
-              aria-haspopup="true"
-              aria-expanded="false"
+              // aria-haspopup="true"
+              // aria-expanded="false"
             >
               Services
             </Link>
-            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item" href="#">
+            {/* <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <Link class="dropdown-item" to="#">
                 Chiropractic Care
-              </a>
-              <a class="dropdown-item" href="#">
+              </Link>
+              <Link class="dropdown-item" to="#">
                 Corrective Exercises
-              </a>
-              <a class="dropdown-item" href="#">
+              </Link>
+              <Link class="dropdown-item" to="#">
                 Lifestyle Advice
-              </a>
-              <a class="dropdown-item" href="#">
+              </Link>
+              <Link class="dropdown-item" to="#">
                 Spinal and Posture Screenings
-              </a>
-            </div>
+              </Link>
+            </div> */}
           </li>
           <li class="nav-item mr-5">
             <a class="nav-link" href="#">
