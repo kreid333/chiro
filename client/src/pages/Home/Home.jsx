@@ -57,38 +57,38 @@ const Home = () => {
             <div className="services">
               <div className="row">
                 <div className="col-sm-6 service-img chiro">
-                  <a href="#">
+                  <Link to="/services">
                     <h2>Chiropractic Care</h2>
                     <span>
                       Learn More <FontAwesomeIcon icon={faChevronCircleRight} />
                     </span>
-                  </a>
+                  </Link>
                 </div>
                 <div className="col-sm-6 service-img corrective">
-                  <a href="#">
+                  <Link to="/services">
                     <h2>Corrective Exercises</h2>
                     <span>
                       Learn More <FontAwesomeIcon icon={faChevronCircleRight} />
                     </span>
-                  </a>
+                  </Link>
                 </div>
               </div>
               <div className="row">
                 <div className="col-sm-6 service-img lifestyle">
-                  <a href="#">
+                  <Link to="/services">
                     <h2>Lifestyle Advice</h2>
                     <span>
                       Learn More <FontAwesomeIcon icon={faChevronCircleRight} />
                     </span>
-                  </a>
+                  </Link>
                 </div>
                 <div className="col-sm-6 service-img spinal">
-                  <a href="#">
+                  <Link to="/services">
                     <h2>Spinal and Posture Screenings</h2>
                     <span>
                       Learn More <FontAwesomeIcon icon={faChevronCircleRight} />
                     </span>
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>
