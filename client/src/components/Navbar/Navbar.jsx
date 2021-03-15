@@ -4,9 +4,9 @@ import "./Navbar.css";
 
 const Navbar = () => {
   return (
-    <nav class="navbar fixed-top navbar-expand-lg navbar-light shadow-sm">
+    <nav className="navbar fixed-top navbar-expand-xl navbar-light shadow-sm">
       <button
-        class="navbar-toggler"
+        className="navbar-toggler"
         type="button"
         data-toggle="collapse"
         data-target="#navbarSupportedContent"
@@ -14,24 +14,24 @@ const Navbar = () => {
         aria-expanded="false"
         aria-label="Toggle navigation"
       >
-        <span class="navbar-toggler-icon"></span>
+        <span className="navbar-toggler-icon"></span>
       </button>
 
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav mx-auto">
-          <li class="nav-item mr-5">
-            <Link class="nav-link" to="/">
+      <div className="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul className="navbar-nav mx-auto">
+          <li className="nav-item mr-5">
+            <Link className="nav-link" to="/">
               Home
             </Link>
           </li>
-          <li class="nav-item mr-5">
-            <Link class="nav-link" to="/about">
+          <li className="nav-item mr-5">
+            <Link className="nav-link" to="/about">
               About
             </Link>
           </li>
-          <li class="nav-item mr-5">
+          <li className="nav-item mr-5">
             <Link
-              class="nav-link"
+              className="nav-link"
               to="/services"
               // id="navbarDropdown"
               // role="button"
@@ -41,44 +41,44 @@ const Navbar = () => {
             >
               Services
             </Link>
-            {/* <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <Link class="dropdown-item" to="#">
+            {/* <div className="dropdown-menu" aria-labelledby="navbarDropdown">
+              <Link className="dropdown-item" to="#">
                 Chiropractic Care
               </Link>
-              <Link class="dropdown-item" to="#">
+              <Link className="dropdown-item" to="#">
                 Corrective Exercises
               </Link>
-              <Link class="dropdown-item" to="#">
+              <Link className="dropdown-item" to="#">
                 Lifestyle Advice
               </Link>
-              <Link class="dropdown-item" to="#">
+              <Link className="dropdown-item" to="#">
                 Spinal and Posture Screenings
               </Link>
             </div> */}
           </li>
-          <li class="nav-item mr-5">
-            <Link class="nav-link" to="/faq">
+          <li className="nav-item mr-5">
+            <Link className="nav-link" to="/faq">
               FAQ
             </Link>
           </li>
-          <li class="nav-item mr-5">
-            <a class="nav-link" href="#">
+          <li className="nav-item mr-5">
+            <a className="nav-link" href="#">
               Blog
             </a>
           </li>
-          <li class="nav-item mr-5">
-            <a class="nav-link" href="#">
+          <li className="nav-item mr-5">
+            <a className="nav-link" href="#">
               Testamonials
             </a>
           </li>
-          <li class="nav-item mr-5">
-            <a class="nav-link" href="#">
+          <li className="nav-item mr-5">
+            <a className="nav-link" href="#">
               Contact
             </a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">
-              New Patient Form
+          <li className="nav-item">
+            <a className="nav-link" href="https://intake.mychirotouch.com/?clinic=LCCO0002" target="_blank">
+              New Patient Intake Form
             </a>
           </li>
         </ul>
