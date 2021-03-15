@@ -29,7 +29,7 @@ const Navbar = () => {
               About
             </Link>
           </li>
-          <li class="nav-item mr-5 dropdown">
+          <li class="nav-item mr-5">
             <Link
               class="nav-link"
               to="/services"
@@ -57,9 +57,9 @@ const Navbar = () => {
             </div> */}
           </li>
           <li class="nav-item mr-5">
-            <a class="nav-link" href="#">
+            <Link class="nav-link" to="/faq">
               FAQ
-            </a>
+            </Link>
           </li>
           <li class="nav-item mr-5">
             <a class="nav-link" href="#">
