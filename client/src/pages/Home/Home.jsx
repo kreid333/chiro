@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./Home.css";
 import logo from "../../images/LCCC.png";
 import drpeer from "../../images/drpeer.jpg";
@@ -8,6 +8,9 @@ import { Link } from "react-router-dom";
 import Operating from "../../components/Operating/Operating";
 
 const Home = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <div>
       {/* HERO */}

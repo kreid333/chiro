@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./Services.css";
 import chirocare from "../../images/pexels-karolina-grabowska-4506109.jpg";
 import corrective from "../../images/pexels-karolina-grabowska-4506166.jpg";
@@ -7,6 +7,9 @@ import spinal from "../../images/pexels-karolina-grabowska-4506107.jpg";
 import Operating from "../../components/Operating/Operating";
 
 const Services = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <div className="container">
       <div className="row">
