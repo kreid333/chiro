@@ -9,18 +9,18 @@
 }
 
 .footer {
-    background-color: #002659;
-    color: white;
-    padding: 40px;
-  }
-  
-  .light-text,
-  .light-text span a,
-  small {
-    color: rgba(255, 255, 255, 0.45);
-  }
-  
-  .contact {
-    display: flex;
-    flex-direction: column;
-  }
+  background-color: #002659;
+  color: white;
+  padding: 40px;
+}
+
+.light-text,
+.light-text span a,
+small {
+  color: rgba(255, 255, 255, 0.45);
+}
+
+.contact {
+  display: flex;
+  flex-direction: column;
+}

@@ -67,17 +67,21 @@ const Navbar = () => {
             </a>
           </li>
           <li className="nav-item mr-5">
-            <a className="nav-link" href="#">
-              Testamonials
-            </a>
+            <Link className="nav-link" to="/testimonials">
+              Testimonials
+            </Link>
           </li>
           <li className="nav-item mr-5">
-            <a className="nav-link" href="#">
+            <Link className="nav-link" to="/contact">
               Contact
-            </a>
+            </Link>
           </li>
           <li className="nav-item">
-            <a className="nav-link" href="https://intake.mychirotouch.com/?clinic=LCCO0002" target="_blank">
+            <a
+              className="nav-link"
+              href="https://intake.mychirotouch.com/?clinic=LCCO0002"
+              target="_blank"
+            >
               New Patient Intake Form
             </a>
           </li>
