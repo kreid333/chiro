@@ -6,6 +6,7 @@ import About from "./pages/About/About";
 import Services from "./pages/Services/Services";
 import FAQ from "./pages/FAQ/FAQ";
 import Contact from "./pages/Contact/Contact";
+import Testimonials from "./pages/Testimonials/Testimonials";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
         <Navbar />
         <Switch>
           <Route exact path="/about" component={About} />
+          <Route exact path="/testimonials" component={Testimonials} />
           <Route exact path="/services" component={Services} />
           <Route exact path="/faq" component={FAQ} />
           <Route exact path="/contact" component={Contact} />
