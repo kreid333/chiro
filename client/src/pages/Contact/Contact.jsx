@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import "./Contact.css";
+import axios from "axios";
 
 const Contact = () => {
   useEffect(() => {
