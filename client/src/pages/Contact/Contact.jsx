@@ -1,10 +1,28 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import "./Contact.css";
 
 const Contact = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
+
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [phoneNumber, setPhoneNumber] = useState("");
+  const [message, setMessage] = useState("");
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+
+    const contactData = {
+      name,
+      email,
+      phoneNumber,
+      message,
+    };
+
+    console.log(contactData);
+  };
   return (
     <div className="container">
       <div className="row">
@@ -16,13 +34,17 @@ const Contact = () => {
         <div className="col-sm-12">
           <div className="card">
             <div className="card-body">
-              <form>
+              <form onClick={handleSubmit}>
                 <div className="form-group">
                   <label for="name">Name</label>
                   <input
                     type="text"
                     className="form-control"
                     id="name"
+                    value={name}
+                    onChange={(e) => {
+                      setName(e.target.value);
+                    }}
                     placeholder="Name"
                   />
                 </div>
@@ -32,15 +54,23 @@ const Contact = () => {
                     type="email"
                     className="form-control"
                     id="email-address"
+                    value={email}
+                    onChange={(e) => {
+                      setEmail(e.target.value);
+                    }}
                     placeholder="Email"
                   />
                 </div>
                 <div className="form-group">
                   <label for="phone-number">Phone Number</label>
                   <input
-                    type="input"
+                    type="tel"
                     className="form-control"
                     id="phone-number"
+                    value={phoneNumber}
+                    onChange={(e) => {
+                      setPhoneNumber(e.target.value);
+                    }}
                     placeholder="Phone Number"
                   />
                 </div>
@@ -49,6 +79,10 @@ const Contact = () => {
                   <textarea
                     className="form-control"
                     id="textarea-1"
+                    value={message}
+                    onChange={(e) => {
+                      setMessage(e.target.value);
+                    }}
                     rows="10"
                     placeholder="Message"
                   ></textarea>
