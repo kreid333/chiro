@@ -139,6 +139,55 @@ const Testimonials = () => {
           </div>
         </div>
       </div>
+      <div className="row text-center">
+        <div className="col-sm-6">
+          <h2>Jonathan Robbins</h2>
+          <iframe
+            width="100%"
+            height="315"
+            src="https://www.youtube.com/embed/j8c8tq_Euvc"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+        </div>
+        <div className="col-sm-6">
+          <h2>Melanie Gibson</h2>
+          <iframe
+            width="100%"
+            height="315"
+            src="https://www.youtube.com/embed/uLKXv5DBVUg"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+        </div>
+      </div>
+      <br />
+      <div className="row text-center">
+        <div className="col-sm-6">
+          <h2>Taurus Williams</h2>
+          <iframe
+            width="100%"
+            height="315"
+            src="https://www.youtube.com/embed/61CswPIPaI4"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+        </div>
+        <div className="col-sm-6">
+          <h2>Ruth Candler</h2>
+          <iframe
+            width="100%"
+            height="315"
+            src="https://www.youtube.com/embed/oa_y9ibQm8E"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+        </div>
+      </div>
       <Operating />
     </div>
   );
