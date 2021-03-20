@@ -1,7 +1,5 @@
 // DEFINING REQUIRED PACKAGES
 const express = require("express");
-const bodyParser = require("body-parser");
-const cookieParser = require("cookie-parser");
 const path = require("path");
 
 // CREATING INSTANCE OF EXPRESS
@@ -17,6 +15,12 @@ const PORT = process.env.PORT || 3001;
 // LISTENING ON PORT
 app.listen(PORT, () => {
   console.log(`Server running on http://localhost:${PORT}`);
+});
+
+// POST REQUEST
+app.post("/api/sendMail", (req, res) => {
+  console.log(req.body);
+  res.end();
 });
 
 // BUILD FOLDER STATIC

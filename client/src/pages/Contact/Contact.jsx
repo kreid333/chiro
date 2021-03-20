@@ -22,7 +22,16 @@ const Contact = () => {
       message,
     };
 
-    console.log(contactData);
+    axios
+      .post("/api/sendMail", contactData)
+      .then(() => {
+        console.log("Successfully sent data.");
+      })
+      .catch((err) => {
+        if (err) {
+          throw err;
+        }
+      });
   };
   return (
     <div className="container">
