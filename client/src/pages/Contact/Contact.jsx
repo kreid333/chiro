@@ -51,6 +51,7 @@ const Contact = () => {
                     type="text"
                     className="form-control"
                     id="name"
+                    name="name"
                     value={name}
                     onChange={(e) => {
                       setName(e.target.value);
@@ -64,6 +65,7 @@ const Contact = () => {
                     type="email"
                     className="form-control"
                     id="email-address"
+                    name="emailAddress"
                     value={email}
                     onChange={(e) => {
                       setEmail(e.target.value);
@@ -77,6 +79,7 @@ const Contact = () => {
                     type="tel"
                     className="form-control"
                     id="phone-number"
+                    name="phoneNumber"
                     value={phoneNumber}
                     onChange={(e) => {
                       setPhoneNumber(e.target.value);
@@ -88,7 +91,8 @@ const Contact = () => {
                   <label for="textarea-1">Message</label>
                   <textarea
                     className="form-control"
-                    id="textarea-1"
+                    id="message"
+                    name="message"
                     value={message}
                     onChange={(e) => {
                       setMessage(e.target.value);

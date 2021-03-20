@@ -17,11 +17,9 @@ app.listen(PORT, () => {
   console.log(`Server running on http://localhost:${PORT}`);
 });
 
-// POST REQUEST
-app.post("/api/sendMail", (req, res) => {
-  console.log(req.body);
-  res.end();
-});
+// API ROUTES
+const apiRoutes = require("./controller/apiController");
+app.use(apiRoutes);
 
 // BUILD FOLDER STATIC
 app.use(express.static("client/build"));
