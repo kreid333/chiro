@@ -12,7 +12,7 @@ const Home = () => {
     window.scrollTo(0, 0);
   }, []);
   return (
-    <div>
+    <div className="wrapper">
       {/* HERO */}
       <div className="hero">
         <div className="logo-bg">

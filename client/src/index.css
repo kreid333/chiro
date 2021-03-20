@@ -3,3 +3,7 @@ body {
   padding-top: 70px;
   min-width: 100vh;
 }
+
+.wrapper {
+  min-height: 100vh;
+}
