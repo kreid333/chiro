@@ -35,7 +35,7 @@ const Contact = () => {
         <div className="col-sm-12">
           <div className="card">
             <div className="card-body">
-              <form onClick={handleSubmit}>
+              <form onSubmit={handleSubmit}>
                 <div className="form-group">
                   <label for="name">Name</label>
                   <input
