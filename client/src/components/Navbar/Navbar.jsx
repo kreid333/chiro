@@ -3,6 +3,13 @@ import { Link } from "react-router-dom";
 import "./Navbar.css";
 
 const Navbar = () => {
+  const navLinkCollapse = () => {
+    const btn = document.querySelector(".navbar-toggler");
+    const navbarContent = document.querySelector(".navbar-collapse");
+    btn.classList.add("collapsed");
+    navbarContent.classList.remove("show");
+  };
+
   return (
     <nav className="navbar fixed-top navbar-expand-xl navbar-light shadow-sm">
       <button
@@ -20,12 +27,12 @@ const Navbar = () => {
       <div className="collapse navbar-collapse" id="navbarSupportedContent">
         <ul className="navbar-nav mx-auto">
           <li className="nav-item mr-5">
-            <Link className="nav-link" to="/">
+            <Link className="nav-link" to="/" onClick={navLinkCollapse}>
               Home
             </Link>
           </li>
           <li className="nav-item mr-5">
-            <Link className="nav-link" to="/about">
+            <Link className="nav-link" to="/about" onClick={navLinkCollapse}>
               About
             </Link>
           </li>
@@ -33,6 +40,7 @@ const Navbar = () => {
             <Link
               className="nav-link"
               to="/services"
+              onClick={navLinkCollapse}
               // id="navbarDropdown"
               // role="button"
               // data-toggle="dropdown"
@@ -57,22 +65,26 @@ const Navbar = () => {
             </div> */}
           </li>
           <li className="nav-item mr-5">
-            <Link className="nav-link" to="/faq">
+            <Link className="nav-link" to="/faq" onClick={navLinkCollapse}>
               FAQ
             </Link>
           </li>
           <li className="nav-item mr-5">
-            <a className="nav-link" href="#">
+            <a className="nav-link" href="#" onClick={navLinkCollapse}>
               Blog
             </a>
           </li>
           <li className="nav-item mr-5">
-            <Link className="nav-link" to="/testimonials">
+            <Link
+              className="nav-link"
+              to="/testimonials"
+              onClick={navLinkCollapse}
+            >
               Testimonials
             </Link>
           </li>
           <li className="nav-item mr-5">
-            <Link className="nav-link" to="/contact">
+            <Link className="nav-link" to="/contact" onClick={navLinkCollapse}>
               Contact
             </Link>
           </li>
@@ -81,6 +93,7 @@ const Navbar = () => {
               className="nav-link"
               href="https://intake.mychirotouch.com/?clinic=LCCO0002"
               target="_blank"
+              onClick={navLinkCollapse}
             >
               New Patient Intake Form
             </a>

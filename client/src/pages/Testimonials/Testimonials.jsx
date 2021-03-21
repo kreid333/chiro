@@ -1,10 +1,13 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { faStar } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import "./Testimonials.css";
 import Operating from "../../components/Operating/Operating";
 
 const Testimonials = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <div className="wrapper">
       <div className="container">
