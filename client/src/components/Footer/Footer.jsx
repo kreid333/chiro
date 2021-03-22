@@ -6,10 +6,20 @@ const Footer = () => {
     <footer class="footer">
       <div class="container text-center">
         <ul className="footer-links">
-          <li className="foot-link">Privacy Policy</li>
-          <li className="foot-link">Terms of Service</li>
-          <li className="foot-link">Healthcare Disclaimer</li>
-          <li className="foot-link">HIPPA Privacy Policy</li>
+          <div className="row">
+            <div className="col-sm-3">
+              <li className="foot-link">Privacy Policy</li>
+            </div>
+            <div className="col-sm-3">
+              <li className="foot-link">Terms of Service</li>
+            </div>
+            <div className="col-sm-3">
+              <li className="foot-link">Healthcare Disclaimer</li>
+            </div>
+            <div className="col-sm-3">
+              <li className="foot-link">HIPPA Privacy Policy</li>
+            </div>
+          </div>
         </ul>
         <h5 className="light-text">Liberty County Clinic of Chiropractic</h5>
         <div className="contact light-text mb-2 mt-2">
