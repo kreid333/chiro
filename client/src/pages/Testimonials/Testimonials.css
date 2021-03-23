@@ -1,28 +1,39 @@
 .rating {
-    background-color: rgba(0, 150, 0, 0.65);
-    width: 75px;
-    border-radius: 10px;
-    color: white;
+  background-color: rgba(0, 150, 0, 0.65);
+  width: 75px;
+  border-radius: 10px;
+  color: white;
 }
 
 .quote {
-    /* position: absolute;
+  /* position: absolute;
     left: 0;
     top: -25px; */
-    font-size: 230px;
-    font-family: Georgia, serif;
-    color: #f2f2f2;
-    z-index: -1;
-    line-height: 1;
+  font-size: 230px;
+  font-family: Georgia, serif;
+  color: #f2f2f2;
+  z-index: -1;
+  line-height: 1;
 }
 
 .stars {
-    position: relative;
-    bottom: 120px;
-    right: 30px;
+  position: relative;
+  bottom: 120px;
+  right: 30px;
 }
 
 .client-review {
-    position: relative;
-    bottom: 130px;
+  position: relative;
+  bottom: 130px;
+}
+
+.reviewBtn {
+  padding: 15px;
+  background-color: white;
+  border: 1px solid black;
+  border-radius: 30px;
+}
+
+.reviewBtn:hover {
+  transform: scale(0.85);
 }

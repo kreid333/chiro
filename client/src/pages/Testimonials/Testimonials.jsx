@@ -1,15 +1,79 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import { faStar } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import "./Testimonials.css";
 import Operating from "../../components/Operating/Operating";
+import { Modal } from "react-bootstrap";
+import { Button } from "react-bootstrap";
+import StarRating from "../../components/StarRating/StarRating";
 
 const Testimonials = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
+  const [show, setShow] = useState(false);
+
+  const handleClose = () => setShow(false);
+  const handleShow = () => setShow(true);
   return (
     <div className="wrapper">
+      <Modal show={show} onHide={handleClose}>
+        <Modal.Header closeButton>
+          <Modal.Title>Submit your review</Modal.Title>
+        </Modal.Header>
+        <Modal.Body>
+          <div className="container">
+            <div className="row">
+              <div className="col-sm-12 mb-3">
+                <label className="d-block" htmlFor="name">
+                  Name
+                </label>
+                <input type="text" name="name" />
+              </div>
+            </div>
+            <div className="row">
+              <div className="col-sm-12 mb-3">
+                <label className="d-block" htmlFor="email">
+                  Email
+                </label>
+                <input type="text" name="email" />
+              </div>
+            </div>
+            <div className="row">
+              <div className="col-sm-12 mb-3">
+                <label className="d-block" htmlFor="reviewTitle">
+                  Review Title
+                </label>
+                <input type="text" name="reviewTitle" />
+              </div>
+            </div>
+            <div className="row">
+              <div className="col-sm-12 mb-3">
+                <label className="d-block" htmlFor="rating">
+                  Rating
+                </label>
+                <StarRating />
+              </div>
+            </div>
+            <div className="row">
+              <div className="col-sm-12 mb-3">
+                <label className="d-block" htmlFor="review">
+                  Review
+                </label>
+                <textarea name="review" cols="50" rows="5"></textarea>
+              </div>
+            </div>
+          </div>
+        </Modal.Body>
+        <Modal.Footer>
+          <Button variant="secondary" onClick={handleClose}>
+            Close
+          </Button>
+          <Button variant="primary" onClick={handleClose}>
+            Submit
+          </Button>
+        </Modal.Footer>
+      </Modal>
       <div className="container">
         <div className="row">
           <div className="col-sm-12">
@@ -27,6 +91,10 @@ const Testimonials = () => {
               <FontAwesomeIcon icon={faStar} size="2x" color="gold" />
               <FontAwesomeIcon icon={faStar} size="2x" color="gold" />
               <span className="rating d-block m-2 p-3 mx-auto">5/5</span>
+              <br />
+              <button className="reviewBtn" onClick={handleShow}>
+                Submit a review
+              </button>
             </div>
           </div>
         </div>
