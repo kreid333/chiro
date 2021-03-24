@@ -22,11 +22,17 @@ const Home = () => {
               src={logo}
               alt="Liberty County Clinic of Chiropractor"
             />
-            <h5>211 E. Memorial Drive</h5>
-            <h5>Hinesville, GA 31313</h5>
-            <h5>
-              Phone: <a href="tel:9123684002">(912) 368-4002</a>
-            </h5>
+            <h4>
+              <strong>211 E. Memorial Drive</strong>
+            </h4>
+            <h4>
+              <strong>Hinesville, GA 31313</strong>
+            </h4>
+            <h4>
+              <strong>
+                Phone: <a href="tel:9123684002">(912) 368-4002</a>
+              </strong>
+            </h4>
           </div>
         </div>
       </div>
