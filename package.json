@@ -10,8 +10,7 @@
     "start:dev": "concurrently \"nodemon --ignore 'libertyccc/*'\" \"npm run client\"",
     "client": "cd libertyccc && npm run start",
     "install": "cd libertyccc && npm install",
-    "build": "cd libertyccc && gatsby build",
-    "heroku-postbuild": "cd libertyccc && gatsby build"
+    "build": "cd libertyccc && npm run build"
   },
   "repository": {
     "type": "git",
