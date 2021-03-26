@@ -3,6 +3,7 @@ import "./styles/contact.css"
 import axios from "axios"
 import Layout from "../components/Layout"
 import { Alert, Toast } from "react-bootstrap"
+import Operating from "../components/Operating/Operating"
 
 const Contact = () => {
   const [name, setName] = useState("")
@@ -128,6 +129,7 @@ const Contact = () => {
               </div>
             </div>
           </div>
+          <Operating />
         </div>
       </div>
     </Layout>
