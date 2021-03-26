@@ -2,12 +2,14 @@ import React, { useEffect, useState } from "react"
 import "./styles/contact.css"
 import axios from "axios"
 import Layout from "../components/Layout"
+import { Alert, Toast } from "react-bootstrap"
 
 const Contact = () => {
   const [name, setName] = useState("")
   const [email, setEmail] = useState("")
   const [phoneNumber, setPhoneNumber] = useState("")
   const [message, setMessage] = useState("")
+  const [show, setShow] = useState(false)
 
   const handleSubmit = e => {
     e.preventDefault()
@@ -19,16 +21,27 @@ const Contact = () => {
       message,
     }
 
-    axios
-      .post("/api/sendMail", contactData)
-      .then(() => {
-        console.log("Successfully sent data.")
-      })
-      .catch(err => {
-        if (err) {
-          throw err
-        }
-      })
+    if (name !== "" && email !== "" && phoneNumber !== "" && message !== "") {
+      const button = document.querySelector(".submitBtn")
+      button.textContent = "Sending..."
+      axios
+        .post("/api/sendMail", contactData)
+        .then(() => {
+          console.log("Successfully sent data.")
+          setShow(true)
+          button.textContent = "Submit"
+          setTimeout(() => {
+            setShow(false)
+          }, 3000)
+        })
+        .catch(err => {
+          if (err) {
+            throw err
+          }
+        })
+    } else {
+      alert("You have not entered any information!")
+    }
   }
   return (
     <Layout>
@@ -104,6 +117,13 @@ const Contact = () => {
                       Submit
                     </button>
                   </form>
+                  <Alert
+                    className="text-center mt-3"
+                    variant="success"
+                    show={show}
+                  >
+                    <span>Email sent.</span>
+                  </Alert>
                 </div>
               </div>
             </div>
