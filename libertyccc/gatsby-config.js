@@ -4,7 +4,7 @@
  * See: https://www.gatsbyjs.com/docs/gatsby-config/
  */
 
- module.exports = {
+module.exports = {
   proxy: {
     prefix: "/api",
     url: "http://localhost:3001",

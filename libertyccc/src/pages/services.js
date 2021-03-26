@@ -35,9 +35,7 @@ const Services = () => {
           </div>
           <div className="row mb-4">
             <div className="col-lg-4 text-center">
-              <h2 className="mb-3">
-                Corrective Exercises
-              </h2>
+              <h2 className="mb-3">Corrective Exercises</h2>
               <img className="imgBubble" src={corrective} alt="" />
             </div>
             <div className="col-lg-8 my-auto pt-3">
@@ -87,4 +85,4 @@ const Services = () => {
   )
 }
 
-export default Services;
+export default Services
