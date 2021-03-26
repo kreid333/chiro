@@ -1,3 +1,4 @@
+import { Link } from "gatsby"
 import React from "react"
 import "./Footer.css"
 
@@ -8,16 +9,20 @@ const Footer = () => {
         <ul className="footer-links">
           <div className="row">
             <div className="col-sm-3">
-              <li className="foot-link">Privacy Policy</li>
+              <li className="foot-link"><Link to="/privacy-policy">Privacy Policy</Link></li>
             </div>
             <div className="col-sm-3">
-              <li className="foot-link">Terms of Service</li>
+              <li className="foot-link"><Link to="/terms-of-service">Terms of Service</Link></li>
             </div>
             <div className="col-sm-3">
-              <li className="foot-link">Healthcare Disclaimer</li>
+              <li className="foot-link">
+                <Link to="/health-disclaimer">Healthcare Disclaimer</Link>
+              </li>
             </div>
             <div className="col-sm-3">
-              <li className="foot-link">HIPPA Privacy Policy</li>
+              <li className="foot-link">
+                <Link to="/hippa-privacy-policy">HIPPA Privacy Policy</Link>
+              </li>
             </div>
           </div>
         </ul>

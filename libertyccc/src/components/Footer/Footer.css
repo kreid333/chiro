@@ -8,6 +8,14 @@
   list-style: none;
 }
 
+.foot-link a {
+  color: white;
+}
+
+.foot-link a:hover {
+  color: white;
+}
+
 .footer {
   background-color: #002659;
   color: white;
