@@ -4,7 +4,7 @@ import Operating from "../components/Operating/Operating"
 
 const HealthDisclaimer = () => {
   return (
-    <Layout>
+    <Layout title="Health Disclaimer">
       <div className="wrapper">
         <div className="container">
           <div className="row">

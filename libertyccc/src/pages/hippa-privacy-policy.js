@@ -4,7 +4,7 @@ import Operating from "../components/Operating/Operating"
 
 const HippaPrivacyPolicy = () => {
   return (
-    <Layout>
+    <Layout title="HIPPA Privacy Policy">
       <div className="wrapper">
         <div className="container">
           <div className="row">

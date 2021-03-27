@@ -15,7 +15,7 @@ const Testimonials = () => {
   const handleClose = () => setShow(false)
   const handleShow = () => setShow(true)
   return (
-    <Layout>
+    <Layout title="Testimonials">
       <div className="wrapper">
         <Modal show={show} onHide={handleClose}>
           <Modal.Header closeButton>

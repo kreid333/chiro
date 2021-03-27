@@ -9,7 +9,7 @@ import Layout from "../components/Layout"
 
 const Services = () => {
   return (
-    <Layout>
+    <Layout title="Services">
       <div className="wrapper">
         <div className="container">
           <div className="row">

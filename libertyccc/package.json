@@ -21,9 +21,11 @@
     "axios": "^0.21.1",
     "bootstrap": "^4.6.0",
     "gatsby": "^3.1.1",
+    "gatsby-plugin-react-helmet": "^4.1.0",
     "react": "^17.0.1",
     "react-bootstrap": "^1.5.2",
-    "react-dom": "^17.0.1"
+    "react-dom": "^17.0.1",
+    "react-helmet": "^6.1.0"
   },
   "devDependencies": {
     "prettier": "2.2.1"

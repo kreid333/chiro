@@ -45,7 +45,7 @@ const Contact = () => {
     }
   }
   return (
-    <Layout>
+    <Layout title="Contact">
       <div className="wrapper">
         <div className="container">
           <div className="row">

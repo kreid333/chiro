@@ -4,7 +4,7 @@ import Layout from "../components/Layout"
 
 const FAQ = () => {
   return (
-    <Layout>
+    <Layout title="FAQ">
       <div className="wrapper">
         <div className="container">
           <div className="row">

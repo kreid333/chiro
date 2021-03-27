@@ -10,7 +10,7 @@ import { Link } from "gatsby"
 
 const Home = () => {
   return (
-    <Layout>
+    <Layout title="Liberty County Clinic of Chiropractic - Dr. David Peer Hinesville Georgia Chiropractor">
       <div className="wrapper">
         {/* HERO */}
         <div className="hero">

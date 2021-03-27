@@ -4,7 +4,7 @@ import Operating from "../components/Operating/Operating"
 
 const PrivacyPolicy = () => {
   return (
-    <Layout>
+    <Layout title="Privacy Policy">
       <div className="wrapper">
         <div className="container">
           <div className="row">

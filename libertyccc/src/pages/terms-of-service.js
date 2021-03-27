@@ -4,7 +4,7 @@ import Operating from "../components/Operating/Operating"
 
 const TermsOfService = () => {
   return (
-    <Layout>
+    <Layout title="Terms of Service">
       <div className="wrapper">
         <div className="container">
           <div className="row">
