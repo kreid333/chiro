@@ -7,6 +7,7 @@ import { Modal } from "react-bootstrap"
 import { Button } from "react-bootstrap"
 import StarRating from "../components/StarRating/StarRating"
 import Layout from "../components/Layout"
+import logo from "../images/LCCC.png"
 
 const Testimonials = () => {
   const [show, setShow] = useState(false)
@@ -79,33 +80,38 @@ const Testimonials = () => {
               <h1 className="m-4 text-center">Testimonials</h1>
             </div>
           </div>
+          <div className="row">
+            <div className="col-sm-6 text-center">
+              <img
+                src={logo}
+                alt="Liberty County Clinic of Chiropractic"
+                width="100%"
+              ></img>
+            </div>
+            <div className="col-sm-6 text-center my-auto pt-4 pb-4">
+              {[...Array(5)].map(() => (
+                <FontAwesomeIcon icon={faStar} size="4x" color="gold" />
+              ))}
+              <br/>
+              <br/>
+              <span className="rating d-block p-3 mx-auto">5/5</span>
+            </div>
+          </div>
+          <br />
           <div className="row mb-5">
-            <div className="col-sm-12">
-              {/* <h2>Liberty County Clinic of Chiropractic</h2>
-          <p className="">Chiropractor located in Hinesville, GA</p> */}
-              <div className="text-center">
-                <FontAwesomeIcon icon={faStar} size="2x" color="gold" />
-                <FontAwesomeIcon icon={faStar} size="2x" color="gold" />
-                <FontAwesomeIcon icon={faStar} size="2x" color="gold" />
-                <FontAwesomeIcon icon={faStar} size="2x" color="gold" />
-                <FontAwesomeIcon icon={faStar} size="2x" color="gold" />
-                <span className="rating d-block m-2 p-3 mx-auto">5/5</span>
-                <br />
-                <button className="reviewBtn" onClick={handleShow}>
-                  Submit a review
-                </button>
-              </div>
+            <div className="col-sm-12 text-center">
+              <button className="reviewBtn" onClick={handleShow}>
+                Submit a review
+              </button>
             </div>
           </div>
           <div className="row">
-            <div className="col-sm-12">
+            <div className="col-sm-12 review">
               <span className="quote">“</span>
               <div className="stars d-inline">
-                <FontAwesomeIcon icon={faStar} color="gold" />
-                <FontAwesomeIcon icon={faStar} color="gold" />
-                <FontAwesomeIcon icon={faStar} color="gold" />
-                <FontAwesomeIcon icon={faStar} color="gold" />
-                <FontAwesomeIcon icon={faStar} color="gold" />
+                {[...Array(5)].map(() => (
+                  <FontAwesomeIcon icon={faStar} color="gold" />
+                ))}
               </div>
               <div className="client-review ml-2">
                 <p>
@@ -128,14 +134,12 @@ const Testimonials = () => {
           </div>
 
           <div className="row">
-            <div className="col-sm-12">
+            <div className="col-sm-12 review">
               <span className="quote">“</span>
               <div className="stars d-inline">
-                <FontAwesomeIcon icon={faStar} color="gold" />
-                <FontAwesomeIcon icon={faStar} color="gold" />
-                <FontAwesomeIcon icon={faStar} color="gold" />
-                <FontAwesomeIcon icon={faStar} color="gold" />
-                <FontAwesomeIcon icon={faStar} color="gold" />
+                {[...Array(5)].map(() => (
+                  <FontAwesomeIcon icon={faStar} color="gold" />
+                ))}
               </div>
               <div className="client-review ml-2">
                 <p>
@@ -157,14 +161,12 @@ const Testimonials = () => {
           </div>
 
           <div className="row">
-            <div className="col-sm-12">
+            <div className="col-sm-12 review">
               <span className="quote">“</span>
               <div className="stars d-inline">
-                <FontAwesomeIcon icon={faStar} color="gold" />
-                <FontAwesomeIcon icon={faStar} color="gold" />
-                <FontAwesomeIcon icon={faStar} color="gold" />
-                <FontAwesomeIcon icon={faStar} color="gold" />
-                <FontAwesomeIcon icon={faStar} color="gold" />
+                {[...Array(5)].map(() => (
+                  <FontAwesomeIcon icon={faStar} color="gold" />
+                ))}
               </div>
               <div className="client-review ml-2">
                 <p>
