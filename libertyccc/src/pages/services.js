@@ -1,4 +1,4 @@
-import React, { useEffect } from "react"
+import React from "react"
 import "./styles/services.css"
 import chirocare from "../images/pexels-karolina-grabowska-4506109.jpg"
 import corrective from "../images/pexels-karolina-grabowska-4506166.jpg"

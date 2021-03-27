@@ -38,13 +38,14 @@ const Header = ({pageTitle}) => {
             <Link to="/contact" className="nav-link mr-5">
               Contact
             </Link>
-            <Link
-              to="https://intake.mychirotouch.com/?clinic=LCCO0002"
+            <a
+              href="https://intake.mychirotouch.com/?clinic=LCCO0002"
+              rel="noreferrer"
               className="nav-link"
               target="_blank"
             >
               New Patient Intake Form
-            </Link>
+            </a>
           </Nav>
         </Navbar.Collapse>
       </Navbar>

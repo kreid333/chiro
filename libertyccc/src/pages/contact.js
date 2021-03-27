@@ -1,8 +1,8 @@
-import React, { useEffect, useState } from "react"
+import React, { useState } from "react"
 import "./styles/contact.css"
 import axios from "axios"
 import Layout from "../components/Layout"
-import { Alert, Toast } from "react-bootstrap"
+import { Alert } from "react-bootstrap"
 import Operating from "../components/Operating/Operating"
 
 const Contact = () => {
@@ -59,7 +59,7 @@ const Contact = () => {
                 <div className="card-body">
                   <form onSubmit={handleSubmit}>
                     <div className="form-group">
-                      <label for="name">Name</label>
+                      <label htmlFor="name">Name</label>
                       <input
                         type="text"
                         className="form-control"
@@ -73,7 +73,7 @@ const Contact = () => {
                       />
                     </div>
                     <div className="form-group">
-                      <label for="email-address">Email</label>
+                      <label htmlFor="email-address">Email</label>
                       <input
                         type="email"
                         className="form-control"
@@ -87,7 +87,7 @@ const Contact = () => {
                       />
                     </div>
                     <div className="form-group">
-                      <label for="phone-number">Phone Number</label>
+                      <label htmlFor="phone-number">Phone Number</label>
                       <input
                         type="tel"
                         className="form-control"
@@ -101,7 +101,7 @@ const Contact = () => {
                       />
                     </div>
                     <div className="form-group">
-                      <label for="textarea-1">Message</label>
+                      <label htmlFor="textarea-1">Message</label>
                       <textarea
                         className="form-control"
                         id="message"

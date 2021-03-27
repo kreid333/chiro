@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react"
+import React, { useState } from "react"
 import { faStar } from "@fortawesome/free-solid-svg-icons"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import "./styles/testimonials.css"
@@ -92,8 +92,8 @@ const Testimonials = () => {
               {[...Array(5)].map(() => (
                 <FontAwesomeIcon icon={faStar} size="4x" color="gold" />
               ))}
-              <br/>
-              <br/>
+              <br />
+              <br />
               <span className="rating d-block p-3 mx-auto">5/5</span>
             </div>
           </div>
@@ -218,23 +218,25 @@ const Testimonials = () => {
             <div className="col-sm-6">
               <h2>Jonathan Robbins</h2>
               <iframe
+                title="Jonathan Robbins Testimonial"
                 width="100%"
                 height="315"
                 src="https://www.youtube.com/embed/j8c8tq_Euvc"
-                frameborder="0"
+                frameBorder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen
+                allowFullScreen
               ></iframe>
             </div>
             <div className="col-sm-6">
               <h2>Melanie Gibson</h2>
               <iframe
+                title="Melanie Gibson Testimonial"
                 width="100%"
                 height="315"
                 src="https://www.youtube.com/embed/uLKXv5DBVUg"
-                frameborder="0"
+                frameBorder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen
+                allowFullScreen
               ></iframe>
             </div>
           </div>
@@ -243,23 +245,25 @@ const Testimonials = () => {
             <div className="col-sm-6">
               <h2>Taurus Williams</h2>
               <iframe
+                title="Taurus Williams Testimonial"
                 width="100%"
                 height="315"
                 src="https://www.youtube.com/embed/61CswPIPaI4"
-                frameborder="0"
+                frameBorder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen
+                allowFullScreen
               ></iframe>
             </div>
             <div className="col-sm-6">
               <h2>Ruth Candler</h2>
               <iframe
+                title="Ruth Candler Testimonial"
                 width="100%"
                 height="315"
                 src="https://www.youtube.com/embed/oa_y9ibQm8E"
-                frameborder="0"
+                frameBorder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen
+                allowFullScreen
               ></iframe>
             </div>
           </div>

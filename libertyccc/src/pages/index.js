@@ -1,4 +1,4 @@
-import React, { useEffect } from "react"
+import React from "react"
 import "./styles/home.css"
 import logo from "../images/LCCC.png"
 import drpeer from "../images/drpeer.jpg"
@@ -46,10 +46,10 @@ const Home = () => {
               <iframe
                 allowtransparency="true"
                 title="Wistia video player"
-                allowFullscreen
-                frameborder="0"
+                allowFullScreen
+                frameBorder="0"
                 scrolling="no"
-                class="wistia_embed"
+                className="wistia_embed"
                 name="wistia_embed"
                 src="https://fast.wistia.net/embed/iframe/yhlgpwxnhd"
                 width="100%"

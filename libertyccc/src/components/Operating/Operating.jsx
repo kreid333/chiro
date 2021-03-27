@@ -9,11 +9,12 @@ const Operating = () => {
         <div className="col-sm-6 text-center mb-3">
           <h2 className="m-3">Our Location</h2>
           <iframe
+            title="Liberty County Clinic of Chiropractic Hinesville, GA Location"
             width="100%"
             height="450"
             style={{ border: 0 }}
             loading="lazy"
-            allowfullscreen
+            allowFullScreen
             src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJR11Qx4Xj-ogREDTauArxjVA&key=AIzaSyD8lxU2exAcp_YzwHLTj6-oFeXhKQsEzp0"
           ></iframe>
         </div>
