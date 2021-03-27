@@ -59,7 +59,7 @@ const Testimonials = () => {
                   <label className="d-block" htmlFor="review">
                     Review
                   </label>
-                  <textarea name="review" cols="46" rows="5"></textarea>
+                  <textarea name="review" cols="30" rows="5"></textarea>
                 </div>
               </div>
             </div>
