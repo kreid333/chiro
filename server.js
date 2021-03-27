@@ -23,8 +23,3 @@ app.use(apiRoutes);
 
 // BUILD FOLDER STATIC
 app.use(express.static("libertyccc/public"));
-
-// ROUTE TO SERVER
-// app.get("*", (req, res) => {
-//   res.sendFile(path.join(__dirname, "./client/build/index.html"));
-// });
