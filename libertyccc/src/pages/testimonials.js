@@ -8,17 +8,45 @@ import { Button } from "react-bootstrap"
 import StarRating from "../components/StarRating/StarRating"
 import Layout from "../components/Layout"
 import logo from "../images/LCCC.png"
+import axios from "axios"
 
 const Testimonials = () => {
   const [show, setShow] = useState(false)
-  const [name, setName] = useState("")
-  const [email, setEmail] = useState("")
-  const [reviewTitle, setReviewTitle] = useState("")
-  const [rating, setRating] = useState("")
-  const [review, setReview] = useState("")
+  const [name, setName] = useState(null)
+  const [email, setEmail] = useState(null)
+  const [reviewTitle, setReviewTitle] = useState(null)
+  const [rating, setRating] = useState(null)
+  const [review, setReview] = useState(null)
 
   const handleClose = () => setShow(false)
   const handleShow = () => setShow(true)
+
+  const data = {
+    name,
+    email,
+    reviewTitle,
+    rating,
+    review,
+  }
+
+  const handleSubmit = () => {
+    axios
+      .post("/api/sendReview", data)
+      .then(response => {
+        console.log(response)
+        setName(null)
+        setEmail(null)
+        setReviewTitle(null)
+        setRating(null)
+        setReview(null)
+        handleClose()
+      })
+      .catch(err => {
+        if (err) {
+          throw err
+        }
+      })
+  }
   return (
     <Layout title="Testimonials">
       <div className="wrapper">
@@ -28,82 +56,84 @@ const Testimonials = () => {
           </Modal.Header>
           <Modal.Body>
             <div className="container">
-              <div className="row">
-                <div className="col-sm-12 mb-3">
-                  <label className="d-block" htmlFor="name">
-                    Name
-                  </label>
-                  <input
-                    type="text"
-                    name="name"
-                    value={name}
-                    onChange={e => {
-                      setName(e.target.value)
-                    }}
-                  />
+              <form>
+                <div className="row">
+                  <div className="col-sm-12 mb-3">
+                    <label className="d-block" htmlFor="name">
+                      Name
+                    </label>
+                    <input
+                      type="text"
+                      name="name"
+                      value={name}
+                      onChange={e => {
+                        setName(e.target.value)
+                      }}
+                    />
+                  </div>
                 </div>
-              </div>
-              <div className="row">
-                <div className="col-sm-12 mb-3">
-                  <label className="d-block" htmlFor="email">
-                    Email
-                  </label>
-                  <input
-                    type="text"
-                    name="email"
-                    value={email}
-                    onChange={e => {
-                      setEmail(e.target.value)
-                    }}
-                  />
+                <div className="row">
+                  <div className="col-sm-12 mb-3">
+                    <label className="d-block" htmlFor="email">
+                      Email
+                    </label>
+                    <input
+                      type="text"
+                      name="email"
+                      value={email}
+                      onChange={e => {
+                        setEmail(e.target.value)
+                      }}
+                    />
+                  </div>
                 </div>
-              </div>
-              <div className="row">
-                <div className="col-sm-12 mb-3">
-                  <label className="d-block" htmlFor="reviewTitle">
-                    Review Title
-                  </label>
-                  <input
-                    type="text"
-                    name="reviewTitle"
-                    value={reviewTitle}
-                    onChange={e => {
-                      setReviewTitle(e.target.value)
-                    }}
-                  />
+                <div className="row">
+                  <div className="col-sm-12 mb-3">
+                    <label className="d-block" htmlFor="reviewTitle">
+                      Review Title
+                    </label>
+                    <input
+                      type="text"
+                      name="reviewTitle"
+                      value={reviewTitle}
+                      onChange={e => {
+                        setReviewTitle(e.target.value)
+                      }}
+                    />
+                  </div>
                 </div>
-              </div>
-              <div className="row">
-                <div className="col-sm-12 mb-3">
-                  <label className="d-block" htmlFor="rating">
-                    Rating
-                  </label>
-                  <StarRating settingRating={setRating} rating={rating} />
+                <div className="row">
+                  <div className="col-sm-12 mb-3">
+                    <label className="d-block" htmlFor="rating">
+                      Rating
+                    </label>
+                    <StarRating settingRating={setRating} rating={rating} />
+                  </div>
                 </div>
-              </div>
-              <div className="row">
-                <div className="col-sm-12 mb-3">
-                  <label className="d-block" htmlFor="review">
-                    Review
-                  </label>
-                  <textarea
-                    name="review"
-                    cols="30"
-                    rows="5"
-                    value={review}
-                    onChange={e => {
-                      setReview(e.target.value)
-                    }}
-                  ></textarea>
+                <div className="row">
+                  <div className="col-sm-12 mb-3">
+                    <label className="d-block" htmlFor="review">
+                      Review
+                    </label>
+                    <textarea
+                      name="review"
+                      cols="30"
+                      rows="5"
+                      value={review}
+                      onChange={e => {
+                        setReview(e.target.value)
+                      }}
+                    ></textarea>
+                  </div>
                 </div>
-              </div>
+              </form>
             </div>
           </Modal.Body>
           <Modal.Footer>
             <Button variant="secondary" onClick={handleClose}>
               Close
             </Button>
-            <Button variant="primary" onClick={handleClose}>
+            <Button variant="primary" onClick={handleSubmit}>
               Submit
             </Button>
           </Modal.Footer>

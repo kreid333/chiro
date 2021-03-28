@@ -54,4 +54,9 @@ router.post("/api/sendMail", (req, res) => {
     sendMail();
   });
 
+  router.post("/api/sendReview", (req, res) => {
+    console.log(req.body);
+    res.end();
+  })
+
   module.exports = router;
