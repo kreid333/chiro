@@ -3,8 +3,8 @@ import "./StarRating.css"
 import { faStar } from "@fortawesome/free-solid-svg-icons"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 
-const StarRating = () => {
-  const [rating, setRating] = useState(null)
+const StarRating = ({settingRating, rating}) => {
+  // const [rating, setRating] = useState(null)
   const [hover, setHover] = useState(null)
 
   return (
@@ -18,7 +18,7 @@ const StarRating = () => {
               name="rating"
               value={ratingValue}
               onClick={() => {
-                setRating(ratingValue)
+                settingRating(ratingValue)
               }}
             />
             {/* if the rating of the star is less than the rating set by the user, make all values less than the user rating gold */}

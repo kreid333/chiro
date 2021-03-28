@@ -11,6 +11,11 @@ import logo from "../images/LCCC.png"
 
 const Testimonials = () => {
   const [show, setShow] = useState(false)
+  const [name, setName] = useState("")
+  const [email, setEmail] = useState("")
+  const [reviewTitle, setReviewTitle] = useState("")
+  const [rating, setRating] = useState("")
+  const [review, setReview] = useState("")
 
   const handleClose = () => setShow(false)
   const handleShow = () => setShow(true)
@@ -28,7 +33,14 @@ const Testimonials = () => {
                   <label className="d-block" htmlFor="name">
                     Name
                   </label>
-                  <input type="text" name="name" />
+                  <input
+                    type="text"
+                    name="name"
+                    value={name}
+                    onChange={e => {
+                      setName(e.target.value)
+                    }}
+                  />
                 </div>
               </div>
               <div className="row">
@@ -36,7 +48,14 @@ const Testimonials = () => {
                   <label className="d-block" htmlFor="email">
                     Email
                   </label>
-                  <input type="text" name="email" />
+                  <input
+                    type="text"
+                    name="email"
+                    value={email}
+                    onChange={e => {
+                      setEmail(e.target.value)
+                    }}
+                  />
                 </div>
               </div>
               <div className="row">
@@ -44,7 +63,14 @@ const Testimonials = () => {
                   <label className="d-block" htmlFor="reviewTitle">
                     Review Title
                   </label>
-                  <input type="text" name="reviewTitle" />
+                  <input
+                    type="text"
+                    name="reviewTitle"
+                    value={reviewTitle}
+                    onChange={e => {
+                      setReviewTitle(e.target.value)
+                    }}
+                  />
                 </div>
               </div>
               <div className="row">
@@ -52,7 +78,7 @@ const Testimonials = () => {
                   <label className="d-block" htmlFor="rating">
                     Rating
                   </label>
-                  <StarRating />
+                  <StarRating settingRating={setRating} rating={rating} />
                 </div>
               </div>
               <div className="row">
@@ -60,7 +86,15 @@ const Testimonials = () => {
                   <label className="d-block" htmlFor="review">
                     Review
                   </label>
-                  <textarea name="review" cols="30" rows="5"></textarea>
+                  <textarea
+                    name="review"
+                    cols="30"
+                    rows="5"
+                    value={review}
+                    onChange={e => {
+                      setReview(e.target.value)
+                    }}
+                  ></textarea>
                 </div>
               </div>
             </div>
