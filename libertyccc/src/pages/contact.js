@@ -41,7 +41,7 @@ const Contact = () => {
           }
         })
     } else {
-      alert("You have not entered any information!")
+      alert("You are missing information! Please try again.")
     }
   }
   return (

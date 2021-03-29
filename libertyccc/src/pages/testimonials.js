@@ -43,22 +43,26 @@ const Testimonials = () => {
   }
 
   const handleSubmit = () => {
-    axios
-      .post("/api/sendReview", data)
-      .then(response => {
-        console.log(response)
-        setName(null)
-        setEmail(null)
-        setRating(null)
-        setReview(null)
-        handleClose()
-        window.location.reload();
-      })
-      .catch(err => {
-        if (err) {
-          throw err
-        }
-      })
+    if (name !== null && email !== null && rating !== null && review !== null) {
+      axios
+        .post("/api/sendReview", data)
+        .then(response => {
+          console.log(response)
+          setName(null)
+          setEmail(null)
+          setRating(null)
+          setReview(null)
+          handleClose()
+          window.location.reload()
+        })
+        .catch(err => {
+          if (err) {
+            throw err
+          }
+        })
+    } else {
+      alert("You are missing information! Please try again.")
+    }
   }
   return (
     <Layout title="Testimonials">
@@ -276,9 +280,14 @@ const Testimonials = () => {
               </div>
             </div>
           </div>
-          {savedReviews.length > 0 && savedReviews.map(review => (
-            <UserReview rating={review.rating} message={review.review} name={review.name}/>
-          ))}
+          {savedReviews.length > 0 &&
+            savedReviews.map(review => (
+              <UserReview
+                rating={review.rating}
+                message={review.review}
+                name={review.name}
+              />
+            ))}
           <div className="row text-center">
             <div className="col-sm-6">
               <h2>Jonathan Robbins</h2>
