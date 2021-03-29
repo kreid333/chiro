@@ -29,7 +29,7 @@ const Home = () => {
               </h4>
               <h4>
                 <strong>
-                  Phone: <Link to="tel:9123684002">(912) 368-4002</Link>
+                  Phone: <a href="tel:9123684002">(912) 368-4002</a>
                 </strong>
               </h4>
             </div>
