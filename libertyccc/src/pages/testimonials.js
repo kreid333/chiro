@@ -1,4 +1,4 @@
-import React, { useState } from "react"
+import React, { useEffect, useState } from "react"
 import { faStar } from "@fortawesome/free-solid-svg-icons"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import "./styles/testimonials.css"
@@ -9,14 +9,28 @@ import StarRating from "../components/StarRating/StarRating"
 import Layout from "../components/Layout"
 import logo from "../images/LCCC.png"
 import axios from "axios"
+import UserReview from "../components/UserReview/UserReview"
 
 const Testimonials = () => {
+  const [savedReviews, setSavedReviews] = useState([])
   const [show, setShow] = useState(false)
   const [name, setName] = useState(null)
   const [email, setEmail] = useState(null)
-  const [reviewTitle, setReviewTitle] = useState(null)
   const [rating, setRating] = useState(null)
   const [review, setReview] = useState(null)
+
+  useEffect(() => {
+    axios
+      .get("/api/getReviews")
+      .then(response => {
+        setSavedReviews(response.data)
+      })
+      .catch(err => {
+        if (err) {
+          throw err
+        }
+      })
+  }, [])
 
   const handleClose = () => setShow(false)
   const handleShow = () => setShow(true)
@@ -24,7 +38,6 @@ const Testimonials = () => {
   const data = {
     name,
     email,
-    reviewTitle,
     rating,
     review,
   }
@@ -36,10 +49,10 @@ const Testimonials = () => {
         console.log(response)
         setName(null)
         setEmail(null)
-        setReviewTitle(null)
         setRating(null)
         setReview(null)
         handleClose()
+        window.location.reload();
       })
       .catch(err => {
         if (err) {
@@ -83,21 +96,6 @@ const Testimonials = () => {
                       value={email}
                       onChange={e => {
                         setEmail(e.target.value)
-                      }}
-                    />
-                  </div>
-                </div>
-                <div className="row">
-                  <div className="col-sm-12 mb-3">
-                    <label className="d-block" htmlFor="reviewTitle">
-                      Review Title
-                    </label>
-                    <input
-                      type="text"
-                      name="reviewTitle"
-                      value={reviewTitle}
-                      onChange={e => {
-                        setReviewTitle(e.target.value)
                       }}
                     />
                   </div>
@@ -278,6 +276,9 @@ const Testimonials = () => {
               </div>
             </div>
           </div>
+          {savedReviews.length > 0 && savedReviews.map(review => (
+            <UserReview rating={review.rating} message={review.review} name={review.name}/>
+          ))}
           <div className="row text-center">
             <div className="col-sm-6">
               <h2>Jonathan Robbins</h2>
