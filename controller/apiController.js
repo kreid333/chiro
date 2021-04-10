@@ -29,7 +29,7 @@ router.post("/api/sendMail", (req, res) => {
         secure: false, // true for 465, false for other ports
         auth: {
           user: "money1890@hotmail.com", // generated ethereal user
-          pass: "lilrei23", // generated ethereal password
+          pass: "Lil'rei23!", // generated ethereal password
         },
         tls: {
           rejectUnauthorized: false,
