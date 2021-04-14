@@ -1,6 +1,7 @@
 const nodemailer = require("nodemailer");
 const router = require("express").Router();
 const db = require("../models");
+require('dotenv').config();
 
 router.post("/api/sendMail", (req, res) => {
   console.log(req.body);
@@ -29,7 +30,7 @@ router.post("/api/sendMail", (req, res) => {
         secure: false, // true for 465, false for other ports
         auth: {
           user: "money1890@hotmail.com", // generated ethereal user
-          pass: "Lil'rei23!", // generated ethereal password
+          pass: process.env.PASSWORD, // generated ethereal password
         },
         tls: {
           rejectUnauthorized: false,
